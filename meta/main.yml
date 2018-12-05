@@ -1,6 +1,7 @@
 ---
 galaxy_info:
   author: Grégory SANCHEZ
+  role_name: container_systemd
   description: install systemd on container
   company: chubchubsancho
 
@@ -39,8 +40,9 @@ galaxy_info:
         - stretch
     - name: Ubuntu
       versions:
-        - all
+        - 18.04
     - name: EL
+      versions:
         - 7
         - 6
 
