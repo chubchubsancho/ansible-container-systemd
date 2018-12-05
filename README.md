@@ -13,7 +13,12 @@ TODO
 
 ### Default usage
 
-TODO
+```yaml
+host: localhost
+- name: "install systemd"
+  include_role:
+    - container-systemd
+```
 
 ### Advanced usage
 
