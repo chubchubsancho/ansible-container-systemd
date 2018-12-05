@@ -41,7 +41,8 @@ galaxy_info:
       versions:
         - all
     - name: EL
-        - all
+        - 7
+        - 6
 
   galaxy_tags:
     - container
