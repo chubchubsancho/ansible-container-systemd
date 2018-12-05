@@ -1,0 +1,11 @@
+---
+
+- name: "install packages"
+  package:
+    name: "{{ container_systemd_package }}"
+    state: present
+
+- name: "check systemd version"
+  command: systemctl --version
+  register: systemd_version
+  changed_when: false

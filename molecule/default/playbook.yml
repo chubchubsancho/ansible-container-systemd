@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "install systemd"
+      import_role:
+        name: ansible-container-systemd

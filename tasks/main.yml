@@ -1,0 +1,7 @@
+---
+
+- name: "install systemd package"
+  include_tasks: install.yml
+  tags:
+    - systemd
+    - installation
