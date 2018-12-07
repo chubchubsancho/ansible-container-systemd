@@ -40,7 +40,7 @@ galaxy_info:
         - stretch
     - name: Ubuntu
       versions:
-        - 18.04
+        - bionic
     - name: EL
       versions:
         - 7
