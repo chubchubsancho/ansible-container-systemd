@@ -1,9 +1,11 @@
 ---
 
 - name: "install packages"
-  package:
+  apt:
     name: "{{ container_systemd_package }}"
+    update_cache: yes
     state: present
+    
 
 - name: "check systemd version"
   command: systemctl --version

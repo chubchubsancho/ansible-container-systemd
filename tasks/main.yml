@@ -1,7 +1,7 @@
 ---
 
 - name: "install systemd package"
-  include_tasks: install.yml
+  include_tasks: "{{ ansible_distribution }}-install.yml"
   tags:
     - systemd
     - installation

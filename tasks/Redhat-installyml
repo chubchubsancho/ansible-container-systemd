@@ -1,0 +1,13 @@
+---
+
+- name: "install packages"
+  yum:
+    name: "{{ container_systemd_package }}"
+    update_cache: true
+    state: present
+    
+
+- name: "check systemd version"
+  command: systemctl --version
+  register: systemd_version
+  changed_when: false
