@@ -5,7 +5,6 @@
     name: "{{ container_systemd_package }}"
     update_cache: true
     state: present
-    
 
 - name: "check systemd version"
   command: systemctl --version
