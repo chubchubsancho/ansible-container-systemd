@@ -14,7 +14,7 @@ matrix:
 jobs:
   include:
     - stage: deploy
-      name: deploy domoticz stable
+      name: deploy systemd
       script:
         - >
            travis_wait 20 sleep infinity & docker run --rm -it
