@@ -20,6 +20,13 @@ platforms:
     stop_signal: SIGRTMIN+3
     groups:
       - default
+  - name: container-systemd-Debian8
+    image: debian:jessie
+    env:
+      container: docker
+    stop_signal: SIGRTMIN+3
+    groups:
+      - default
   - name: container-systemd-Ubuntu18.04
     image: ubuntu:18.04
     env:
@@ -27,8 +34,22 @@ platforms:
     stop_signal: SIGRTMIN+3
     groups:
       - default
-  - name: container-systemd-CentOS9
+  - name: container-systemd-Ubuntu16.04
+    image: ubuntu:16.04
+    env:
+      container: docker
+    stop_signal: SIGRTMIN+3
+    groups:
+      - default
+  - name: container-systemd-CentOS7
     image: centos:7
+    env:
+      container: docker
+    stop_signal: SIGRTMIN+3
+    groups:
+      - default
+  - name: container-systemd-CentOS6
+    image: centos:6
     env:
       container: docker
     stop_signal: SIGRTMIN+3

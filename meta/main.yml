@@ -38,12 +38,15 @@ galaxy_info:
     - name: Debian
       versions:
         - stretch
+        - jessie
     - name: Ubuntu
       versions:
         - bionic
+        - xenial
     - name: EL
       versions:
         - 7
+        - 6
 
   galaxy_tags:
     - container
