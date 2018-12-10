@@ -48,13 +48,6 @@ platforms:
     stop_signal: SIGRTMIN+3
     groups:
       - default
-  - name: container-systemd-CentOS6
-    image: centos:6
-    env:
-      container: docker
-    stop_signal: SIGRTMIN+3
-    groups:
-      - default
 
 provisioner:
   name: ansible
